@@ -4,3 +4,5 @@ Allow: /
 # Temporary development mode.
 # HTML pages carry meta robots noindex/nofollow so crawlers can see the directive.
 # Do not use Disallow here while noindex must be discovered.
+
+Sitemap: https://aleksandrlegostaev.ru/sitemap.xml

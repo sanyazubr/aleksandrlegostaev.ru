@@ -55,3 +55,8 @@ p { font-size: 20px; max-width: 760px; color: #332d28; }
   .grid { grid-template-columns: 1fr; }
   p { font-size: 18px; }
 }
+
+.evidence-list { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+.evidence-list li { padding: 16px 18px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,250,242,.62); }
+.evidence-list a { font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.evidence-list span { display: block; margin-top: 4px; color: var(--muted); font-size: 16px; }
