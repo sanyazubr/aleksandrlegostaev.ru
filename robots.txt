@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Temporary development mode.
-# HTML pages carry meta robots noindex/nofollow so crawlers can see the directive.
-# Do not use Disallow here while noindex must be discovered.
+# Crawlers are allowed to read the site.
+# The root page may still carry a page-level noindex during development;
+# /legostaev-hub/ is intentionally indexable and listed in sitemap.xml.
 
 Sitemap: https://aleksandrlegostaev.ru/sitemap.xml
