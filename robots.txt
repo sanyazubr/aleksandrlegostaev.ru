@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-# Crawlers are allowed to read the site.
-# The root page may still carry a page-level noindex during development;
-# /legostaev-hub/ is intentionally indexable and listed in sitemap.xml.
-
 Sitemap: https://aleksandrlegostaev.ru/sitemap.xml
