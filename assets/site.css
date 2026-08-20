@@ -4,3 +4,6 @@
 
 /* Headings wrap only between words; body copy keeps its existing overflow guard. */
 h1,h2,h3{overflow-wrap:normal;word-break:normal;hyphens:none}
+
+/* Keep the longest screen-06 word inside its desktop column across font renderers. */
+.screen-06 .screen-inner{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
