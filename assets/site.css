@@ -115,7 +115,7 @@ img {
   transform: translateY(-180%);
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
   transform: translateY(0);
 }
 
@@ -955,6 +955,10 @@ h3 {
 }
 
 @media (max-width: 820px) {
+  .skip-link {
+    display: none;
+  }
+
   :root {
     --page-pad: 1.25rem;
     --section-y: clamp(4.75rem, 15vw, 6.5rem);
@@ -986,7 +990,20 @@ h3 {
     justify-content: space-between;
     padding: 0.7rem 1.15rem;
     border-bottom: 1px solid var(--line);
-    background: rgb(242 244 243 / 98%);
+    background: var(--paper);
+    isolation: isolate;
+  }
+
+  .mobile-header::before {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    height: 12rem;
+    background: var(--paper);
+    content: "";
+    pointer-events: none;
   }
 
   .mobile-header__brand {
